@@ -5,6 +5,7 @@ import { UserDetailComponent } from './main-features/user-detail/user-detail.com
 import { MyRequestsComponent } from './main-features/my-requests/my-requests.component';
 import { MyClassesComponent } from './main-features/my-classes/my-classes.component';
 import { LeavesComponent } from './main-features/leaves/leaves.component';
+import { LeaveDetailComponent } from './main-features/leave-detail/leave-detail.component';
 
 export const routes: Routes = [
     {path: '', component: DashboardComponent},
@@ -12,5 +13,6 @@ export const routes: Routes = [
     {path: 'my-requests', component: MyRequestsComponent},
     {path: 'my-classes', component: MyClassesComponent},
     {path: 'leaves', component: LeavesComponent},
+    {path: 'leaves/:id/:name', component: LeaveDetailComponent},
     {path: 'user-detail', component: UserDetailComponent}
 ];
